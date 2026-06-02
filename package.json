@@ -1,0 +1,19 @@
+{
+  "name": "vpn-diagnostics",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Realtime VPN and network diagnostics dashboard",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "start": "concurrently \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
+    "build": "npm run build --workspace frontend",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
