@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { useLang } from "../i18n/LangContext";
 import { t } from "../i18n/translations";
 import ContactModal from "./ContactModal";
@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header className="relative overflow-hidden border-b border-neutral-800/50">
-      {/* Background image вЂ” Р·Р°РјРµРЅРё /images/header-bg.jpg РЅР° СЃРІРѕС‘ РёР·РѕР±СЂР°Р¶РµРЅРёРµ */}
+      {/* Background image — замени /images/header-bg.jpg на своё изображение */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url(./images/header-bg.jpg)" }}
@@ -48,7 +48,7 @@ export default function Header() {
         <div className="flex flex-col items-start gap-8 sm:flex-row sm:items-center sm:justify-between">
           {/* Left: Logo + Text */}
           <div className="flex items-center gap-5 sm:gap-6">
-            {/* Logo вЂ” Р·Р°РјРµРЅРё /images/logo.png РЅР° СЃРІРѕС‘ РёР·РѕР±СЂР°Р¶РµРЅРёРµ */}
+            {/* Logo — замени /images/logo.png на своё изображение */}
             <img
               src="./images/logo.png"
               alt="Logo"
@@ -56,15 +56,15 @@ export default function Header() {
             />
 
             <div>
-              {/* РќРёРє вЂ” РіР»Р°РІРЅС‹Р№ */}
+              {/* Ник — главный */}
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
                 {t("header.nickname", lang)}
               </h1>
-              {/* Р РѕР»СЊ вЂ” РїРѕРјРµРЅСЊС€Рµ */}
+              {/* Роль — поменьше */}
               <p className="mt-1 text-lg font-semibold tracking-wide text-indigo-400 sm:text-xl">
                 {t("header.role", lang)}
               </p>
-              {/* РћРїРёСЃР°РЅРёРµ */}
+              {/* Описание */}
               <p className="mt-3 max-w-lg text-sm leading-relaxed text-neutral-400 sm:text-base">
                 {t("header.description", lang)}
               </p>

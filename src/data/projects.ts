@@ -1,4 +1,4 @@
-﻿export interface Creator {
+export interface Creator {
   name: string;
   role: { ru: string; en: string };
   url: string;
@@ -13,7 +13,7 @@ export interface Project {
   description: { ru: string; en: string };
   tags: string[];
   images: string[];
-  youtubeId?: string; // ID РІРёРґРµРѕ СЃ YouTube (РёР· URL: youtube.com/watch?v=Р­РўРћРў_ID)
+  youtubeId?: string; // ID видео с YouTube (из URL: youtube.com/watch?v=ЭТОТ_ID)
   workshopId?: string;
 }
 
@@ -28,19 +28,19 @@ export const projects: Project[] = [
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ | РђРЅРёРјР°С†РёРё", en: "Environment Artist | LvL-design | Animations" },
+        role: { ru: "Художник по окружению | lvl-дизайн | Анимации", en: "Environment Artist | LvL-design | Animations" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
       {
         name: "YarFunnyStar",
-        role: { ru: "РћСЂРёРіРёРЅР°Р»СЊРЅР°СЏ РёРґРµСЏ | lvl-РґРёР·Р°Р№РЅ | CС†РµРЅР°СЂРёР№", en: "Original idea | LvL-design | Script" },
+        role: { ru: "Оригинальная идея | lvl-дизайн | Cценарий", en: "Original idea | LvL-design | Script" },
         url: "https://steamcommunity.com/id/YarFunnyStar",
         avatar: "./images/authors/yarfunnystar_ava.jpg",
       },
     ],
     description: {
-      ru: "Р”РµС‚РµРєС‚РёРІ СЂР°СЃР»РµРґСѓРµС‚ СѓР±РёР№СЃС‚РІР°, РїРѕСЃС‚РµРїРµРЅРЅРѕ СЃС…РѕРґСЏ СЃ СѓРјР°",
+      ru: "Детектив расследует убийства, постепенно сходя с ума",
       en: "A detective investigates murders while gradually going crazy.",
     },
  tags: ["Source1", "Counter-Strike:Global Offensive", "Co-op",],
@@ -63,13 +63,13 @@ export const projects: Project[] = [
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ | РђРЅРёРјР°С†РёРё", en: "Environment Artist | LvL-design | Animations" },
+        role: { ru: "Художник по окружению | lvl-дизайн | Анимации", en: "Environment Artist | LvL-design | Animations" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
     ],
     description: {
-      ru: "Р РµРјРµР№Рє РєР°СЂС‚С‹ РёР· CSGO РґР»СЏ CS2. РџРёС†С†РµСЂРёСЏ Р¤СЂРµРґРґРё Р¤Р°Р·Р±РµСЂР°. Р РµР¶РёРј Maniac РЅР° Р»РѕРєР°С†РёРё РёР· РІСЃРµР»РµРЅРЅРѕР№ Five Nights At Freddy's.",
+      ru: "Ремейк карты из CSGO для CS2. Пиццерия Фредди Фазбера. Режим Maniac на локации из вселенной Five Nights At Freddy's.",
       en: "Remake of CSGO map for CS2. Freddy Fazbear's Pizzeria. Maniac mode in a location from the Five Nights at Freddy's universe.",
     },
     tags: ["Source2", "Counter-Strike 2", "Substaince Painter", "Blender", "Maniac"],
@@ -93,19 +93,19 @@ export const projects: Project[] = [
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ | РћСЂРёРіРёРЅР°Р»СЊРЅР°СЏ РёРґРµСЏ", en: "Environment Artist | LvL-design | Original idea" },
+        role: { ru: "Художник по окружению | lvl-дизайн | Оригинальная идея", en: "Environment Artist | LvL-design | Original idea" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
       {
         name: "ArtiX",
-        role: { ru: "РЎРµРєСЂРµС‚РЅС‹Рµ РјРµСЃС‚Р° (РЅС‹С‡РєРё)", en: "Hiding spots" },
+        role: { ru: "Секретные места (нычки)", en: "Hiding spots" },
         url: "https://steamcommunity.com/profiles/76561198826516948",
         avatar: "./images/authors/artix_ava.jpg",
       },
     ],
     description: {
-      ru: "РџСЂСЏС‚РєРё РІ Р±РѕР»СЊС€РѕРј РѕС‚РµР»Рµ",
+      ru: "Прятки в большом отеле",
       en: "Hide and seek in big hotels",
     },
  tags: ["Source1", "Counter-Strike:Global Offensive","Maniac"],
@@ -122,32 +122,32 @@ export const projects: Project[] = [
   {
      id: "Pubg",
     title: {
-      ru: "PUBG Mobile [РљРѕСЂРѕР»РµРІСЃРєР°СЏ Р±РёС‚РІР° РІ CS2]",
+      ru: "PUBG Mobile [Королевская битва в CS2]",
       en: "PUBG Mobile [Battle Royale in CS2]",
     },
     date: "2026-02-20",
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ", en: "Environment Artist" },
+        role: { ru: "Художник по окружению", en: "Environment Artist" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
       {
         name: "denhet",
-        role: { ru: "lvl-РґРёР·Р°Р№РЅ | РћСЂРёРіРёРЅР°Р»СЊРЅР°СЏ РёРґРµСЏ | Р“РµР№РјРїР»РµР№", en: "LvL-design | Original idea | Gameplay" },
+        role: { ru: "lvl-дизайн | Оригинальная идея | Геймплей", en: "LvL-design | Original idea | Gameplay" },
         url: "https://steamcommunity.com/id/denhetik",
         avatar: "./images/authors/denhet_ava.png",
       },
       {
         name: "twyxe",
-        role: { ru: "РЎРєСЂРёРїС‚С‹", en: "Scripts" },
+        role: { ru: "Скрипты", en: "Scripts" },
         url: "https://steamcommunity.com/id/twyxe_mapper",
         avatar: "./images/authors/twyxe_ava.jpg",
       },
     ],
     description: {
-      ru: "РњС‹ РІРѕСЃСЃРѕР·РґР°Р»Рё РёРіСЂСѓ PUBG РІ Counter-Strike 2. Р’РѕСЃСЃРѕР·РґР°РЅС‹: РїСЂС‹Р¶РѕРє РёР· СЃР°РјРѕР»С‘С‚Р° РІ РЅР°С‡Р°Р»Рµ РёРіСЂС‹; РЎСѓР¶Р°СЋС‰Р°СЏСЃСЏ Р·РѕРЅР°; РѕСЂСѓР¶РёРµ Рё СЃРЅР°СЂСЏР¶РµРЅРёСЏ; Air-РґСЂРѕРї; РњР°С€РёРЅС‹ Рё РјРЅРѕРіРѕРµ РґСЂСѓРіРѕРµ",
+      ru: "Мы воссоздали игру PUBG в Counter-Strike 2. Воссозданы: прыжок из самолёта в начале игры; Сужающаяся зона; оружие и снаряжения; Air-дроп; Машины и многое другое",
       en: "We've recreated PUBG in Counter-Strike 2. This includes: the jump from the plane at the beginning of the game; the Shrinking Zone; weapons and equipment; Airdrops; cars and much more.",
     },
     tags: ["Source2", "Counter-Strike 2", "Battle Royale"],
@@ -166,20 +166,20 @@ export const projects: Project[] = [
   {
    id: "School",
     title: {
-      ru: "Hide and seek | РЁРєРѕР»Р°",
+      ru: "Hide and seek | Школа",
       en: "Hide and seek | School",
     },
     date: "2018-12-08",
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ | РћСЂРёРіРёРЅР°Р»СЊРЅР°СЏ РёРґРµСЏ", en: "Environment Artist | LvL-design | Original idea" },
+        role: { ru: "Художник по окружению | lvl-дизайн | Оригинальная идея", en: "Environment Artist | LvL-design | Original idea" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
     ],
     description: {
-      ru: "РџСЂСЏС‚РєРё РІ С€РєРѕР»Рµ",
+      ru: "Прятки в школе",
       en: "Hide and seek in the School",
     },
     tags: ["Source1", "Counter-Strike:Global Offensive", "Maniac"],
@@ -205,13 +205,13 @@ export const projects: Project[] = [
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ | РћСЂРёРіРёРЅР°Р»СЊРЅР°СЏ РёРґРµСЏ", en: "Environment Artist | LvL-design | Original idea" },
+        role: { ru: "Художник по окружению | lvl-дизайн | Оригинальная идея", en: "Environment Artist | LvL-design | Original idea" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
     ],
     description: {
-      ru: "РџРёС†С†РµСЂРёСЏ Р¤СЂРµРґРґРё Р¤Р°Р·Р±РµСЂР°. Р РµР¶РёРј Maniac РЅР° Р»РѕРєР°С†РёРё РёР· РІСЃРµР»РµРЅРЅРѕР№ Five Nights At Freddy's.",
+      ru: "Пиццерия Фредди Фазбера. Режим Maniac на локации из вселенной Five Nights At Freddy's.",
       en: "Freddy Fazbear's Pizzeria. Maniac mode in a location from the Five Nights at Freddy's universe.",
     },
     tags: ["Source1", "Counter-Strike:Global Offensive", "Maniac"],
@@ -235,13 +235,13 @@ export const projects: Project[] = [
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ | РћСЂРёРіРёРЅР°Р»СЊРЅР°СЏ РёРґРµСЏ", en: "Environment Artist | LvL-design | Original idea" },
+        role: { ru: "Художник по окружению | lvl-дизайн | Оригинальная идея", en: "Environment Artist | LvL-design | Original idea" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
     ],
     description: {
-      ru: "РўСЂРµРЅРёСЂРѕРІРєР° СЃС‚СЂРµР»СЊР±С‹ РїРѕ Р±РѕС‚Р°Рј, РєРѕС‚РѕСЂС‹Рµ РІС‹Р±РµРіР°СЋС‚ РёР· С‚СѓРјР°РЅР°.",
+      ru: "Тренировка стрельбы по ботам, которые выбегают из тумана.",
       en: "Practice shooting at bots that run out of the fog.",
     },
     tags: ["Source2", "Counter-Strike 2", "Blender", "Substaince Painter", "Gaea", "Training",],
@@ -263,19 +263,19 @@ export const projects: Project[] = [
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ", en: "Environment Artist | LvL-design" },
+        role: { ru: "Художник по окружению | lvl-дизайн", en: "Environment Artist | LvL-design" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
       {
         name: "Danber",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ", en: "Environment Artist | LvL-design" },
+        role: { ru: "Художник по окружению | lvl-дизайн", en: "Environment Artist | LvL-design" },
         url: "https://steamcommunity.com/id/Danber221",
         avatar: "./images/authors/danber_ava.gif",
       },
     ],
     description: {
-      ru: "РљР°СЂС‚Р° РїРѕ С„РёР»СЊРјСѓ РћРЅРѕ. РџСЂСЏС‚РєРё РІ РњСЂР°С‡РЅРѕРј Рё С‚Р°РёРЅСЃС‚РІРµРЅРЅРѕРј РґРѕРјРµ РџРµРЅРЅРёРІР°Р№Р·Р°",
+      ru: "Карта по фильму Оно. Прятки в Мрачном и таинственном доме Пеннивайза",
       en: "Map of the film It. Hide and Seek in Pennywise's Dark and Mysterious House",
     },
     tags: ["Source1", "Counter-Strike:Global Offensive", "Maniac"],
@@ -299,13 +299,13 @@ export const projects: Project[] = [
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ", en: "Environment Artist | LvL-design" },
+        role: { ru: "Художник по окружению | lvl-дизайн", en: "Environment Artist | LvL-design" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
     ],
     description: {
-      ru: "РџСЂСЏС‚РєРё РІ РґРѕРјРµ: РљРЅР°РєР»СЃ РїСЂРѕС‚РёРІ РЎРѕРЅРёРєР°",
+      ru: "Прятки в доме: Кнаклс против Соника",
       en: "Hide and Seek in the House: Knuckles vs Sonic",
     },
     tags: ["Source1", "Counter-Strike:Global Offensive",],
@@ -322,26 +322,26 @@ export const projects: Project[] = [
   {
     id: "hns_factory",
     title: {
-      ru: "Hide and seek | Р¤Р°Р±СЂРёРєР°",
+      ru: "Hide and seek | Фабрика",
       en: "Hide and seek | Factory",
     },
     date: "2019-04-23",
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ | РћСЂРёРіРёРЅР°Р»СЊРЅР°СЏ РёРґРµСЏ", en: "Environment Artist | LvL-design | Original idea" },
+        role: { ru: "Художник по окружению | lvl-дизайн | Оригинальная идея", en: "Environment Artist | LvL-design | Original idea" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
       {
         name: "ArtiX",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ", en: "Environment Artist | LvL-design" },
+        role: { ru: "Художник по окружению | lvl-дизайн", en: "Environment Artist | LvL-design" },
         url: "https://steamcommunity.com/profiles/76561198826516948",
         avatar: "./images/authors/artix_ava.jpg",
       },
     ],
     description: {
-      ru: "РџСЂСЏС‚РєРё РЅР° Р±РѕР»СЊС€РѕР№ Р¤Р°Р±СЂРёРєРµ. РџРµСЂРµСЂР°Р±РѕС‚Р°РЅРЅР°СЏ РєР°СЂС‚Р° 'Р¤Р°Р±СЂРёРєР°' РёР· РёРіСЂС‹ Warface",
+      ru: "Прятки на большой Фабрике. Переработанная карта 'Фабрика' из игры Warface",
       en: "Hide and Seek in the Big Factory. A reworked version of the 'Factory' map from Warface.",
     },
     tags: ["Source1", "Counter-Strike:Global Offensive", "Maniac"],
@@ -366,13 +366,13 @@ export const projects: Project[] = [
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ | РћСЂРёРіРёРЅР°Р»СЊРЅР°СЏ РёРґРµСЏ ", en: "Environment Artist | LvL-design | Original idea" },
+        role: { ru: "Художник по окружению | lvl-дизайн | Оригинальная идея ", en: "Environment Artist | LvL-design | Original idea" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
     ],
     description: {
-      ru: "РўСЂРµРЅРёСЂРѕРІРєР° РЎС‚СЂРµР»СЊР±С‹, СЂРµР°РєС†РёРё Рё РєРѕРЅС‚СЂРѕР»СЏ РѕС‚РґР°С‡Рё РїРѕ СЃС„РµСЂР°Рј",
+      ru: "Тренировка Стрельбы, реакции и контроля отдачи по сферам",
       en: "Shooting, Reaction, and Recoil Control Training on DOTs",
     },
     tags: ["Source2", "Counter-Strike 2", "Training",],
@@ -388,20 +388,20 @@ export const projects: Project[] = [
   {
     id: "hns_hawkins_lab",
     title: {
-      ru: "Hide and seek | Р›Р°Р±РѕСЂР°С‚РѕСЂРёСЏ РҐРѕСѓРєРёРЅСЃР° [РћС‡РµРЅСЊ РЎС‚СЂР°РЅРЅС‹Рµ Р”РµР»Р°]",
+      ru: "Hide and seek | Лаборатория Хоукинса [Очень Странные Дела]",
       en: "Hide and seek | Hawkins Laboratory [Stranger Things]",
     },
     date: "2022-06-06",
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ | РћСЂРёРіРёРЅР°Р»СЊРЅР°СЏ РёРґРµСЏ ", en: "Environment Artist | LvL-design | Original idea" },
+        role: { ru: "Художник по окружению | lvl-дизайн | Оригинальная идея ", en: "Environment Artist | LvL-design | Original idea" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
     ],
     description: {
-      ru: "РџСЂСЏС‚РєРё РІ Р›Р°Р±РѕСЂР°С‚РѕСЂРёРё РҐРѕСѓРєРёРЅСЃР°. Р Р°Р±РѕС‚РЅРёРєРё Р»Р°Р±РѕСЂР°С‚РѕСЂРёРё РїС‹С‚Р°СЋС‚СЃСЏ РІС‹Р¶РёС‚СЊ, СѓР±РµРіР°СЏ РѕС‚ РґРµРјРѕРіРѕСЂРіР°РЅР°",
+      ru: "Прятки в Лаборатории Хоукинса. Работники лаборатории пытаются выжить, убегая от демогоргана",
       en: "Hide and Seek at Hawkins Laboratory. Lab workers try to survive while running from a demogorgan.",
     },
     tags: ["Source1", "Counter-Strike:Global Offensive", "Maniac"],
@@ -420,26 +420,26 @@ export const projects: Project[] = [
   {
     id: "hns_harmless_joke",
     title: {
-      ru: "Hide and seek | Р‘РµР·РѕР±РёРґРЅР°СЏ С€СѓС‚РєР°",
+      ru: "Hide and seek | Безобидная шутка",
       en: "Hide and seek | Harmless Joke",
     },
     date: "2021-09-01",
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ", en: "Environment Artist | LvL-design" },
+        role: { ru: "Художник по окружению | lvl-дизайн", en: "Environment Artist | LvL-design" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
       {
         name: "PakaJI",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ | РћСЂРёРіРёРЅР°Р»СЊРЅР°СЏ РёРґРµСЏ ", en: "Environment Artist | LvL-design | Original idea" },
+        role: { ru: "Художник по окружению | lvl-дизайн | Оригинальная идея ", en: "Environment Artist | LvL-design | Original idea" },
         url: "https://steamcommunity.com/id/pakajimapmaker",
         avatar: "./images/authors/pakaJl_ava.jpg",
       },
     ],
     description: {
-      ru: "РџСЂСЏС‚РєРё РІ Р±СѓРЅРєРµСЂРµ. РџРѕР»РёС†РёСЏ РїСЂРёРµС…Р°Р»Р° РЅР° РІС‹Р·РѕРІ. РЎРѕРѕР±С‰Р°СЋС‚ Рѕ РјР°СЃСЃРѕРІРѕРј СѓР±РёР№СЃС‚РІРµ РІ Р·Р°Р±СЂРѕС€РµРЅРЅРѕРј Р±СѓРЅРєРµСЂРµ. РћРґРёРЅ РёР· РѕС‡РµРІРёРґС†РµРІ РІРёРґРµР» С‡РµР»РѕРІРµРєР° РІ РєРѕСЃС‚СЋРјРµ РєР»РѕСѓРЅР°.",
+      ru: "Прятки в бункере. Полиция приехала на вызов. Сообщают о массовом убийстве в заброшенном бункере. Один из очевидцев видел человека в костюме клоуна.",
       en: "Hide and seek in a bunker. The police responded to a call about a mass murder in an abandoned bunker. One witness saw a man dressed as a clown.",
     },
     tags: ["Source1", "Counter-Strike:Global Offensive", "Maniac"],
@@ -460,20 +460,20 @@ export const projects: Project[] = [
   {
     id: "hns_grinch_madness",
     title: {
-      ru: "Р‘РµР·СѓРјРёРµ Р“СЂРёРЅС‡Р° | Hide and seek",
+      ru: "Безумие Гринча | Hide and seek",
       en: "Grinch Madness | Hide and seek",
     },
     date: "2025-12-25",
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ", en: "Environment Artist | LvL-design" },
+        role: { ru: "Художник по окружению | lvl-дизайн", en: "Environment Artist | LvL-design" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
     ],
     description: {
-      ru: "РќРѕРІРѕРіРѕРґРЅРёРµ РїСЂСЏС‚РєРё РІ РґРѕРјРµ. Р“СЂРёРЅС‡ СЃРѕС€С‘Р» СЃ СѓРјР° Рё РЅР°С‡Р°Р» РіРѕРЅСЏС‚СЊСЃСЏ Р·Р° СЃРІРѕРёРј РїСЃРѕРј",
+      ru: "Новогодние прятки в доме. Гринч сошёл с ума и начал гоняться за своим псом",
       en: "New Year's hide-and-seek in the house. The Grinch went crazy and started chasing his dog.",
     },
     tags: ["Source2", "Counter-Strike 2", "Maniac"],
@@ -498,19 +498,19 @@ export const projects: Project[] = [
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ", en: "Environment Artist | LvL-design" },
+        role: { ru: "Художник по окружению | lvl-дизайн", en: "Environment Artist | LvL-design" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
       {
         name: "denhet",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ | РћСЂРёРіРёРЅР°Р»СЊРЅР°СЏ РёРґРµСЏ", en: "Environment Artist | LvL-design | Original idea" },
+        role: { ru: "Художник по окружению | lvl-дизайн | Оригинальная идея", en: "Environment Artist | LvL-design | Original idea" },
         url: "https://steamcommunity.com/id/denhetik",
         avatar: "./images/authors/denhet_ava.png",
       },
     ],
     description: {
-      ru: "Р’РѕcСЃРѕР·РґР°РЅ Р›РµРіРµРЅРґР°СЂРЅС‹Р№ СЂРµР¶РёРј РёР· РњР°Р№РЅРєСЂР°С„С‚Р° РІ CS2. РќР° РєР°СЂС‚Рµ 32 СѓРЅРёРєР°Р»СЊРЅС‹С… СѓСЂРѕРІРЅСЏ Рё РєР°Р¶РґС‹Р№ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ РІСЃРµ СЃР»РѕР¶РЅРµРµ Рё СЃР»РѕР¶РЅРµРµ. РҐРѕСЂРѕС€РёР№ СЃРїРѕСЃРѕР± РїСЂРѕРІРµСЂРёС‚СЊ Рё РїСЂРѕРєР°С‡Р°С‚СЊ СЃРІРѕРё РЅР°РІС‹РєРё РІ CS2",
+      ru: "Воcсоздан Легендарный режим из Майнкрафта в CS2. На карте 32 уникальных уровня и каждый становится все сложнее и сложнее. Хороший способ проверить и прокачать свои навыки в CS2",
       en: "Minecraft's Legendary Mode has been recreated for CS2. The map features 32 unique levels, each one getting progressively more challenging. It's a great way to test and improve your CS2 skills.",
     },
     tags: ["Source2", "Counter-Strike 2", "Dropper"],
@@ -532,20 +532,20 @@ export const projects: Project[] = [
   {
     id: "hns_industry_town",
     title: {
-      ru: "Hide and seek | РџСЂРѕРјС‹С€Р»РµРЅРЅС‹Р№ Р“РѕСЂРѕРґ",
+      ru: "Hide and seek | Промышленный Город",
       en: "Hide and seek | Industry Town",
     },
     date: "2025-09-21",
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ", en: "Environment Artist | LvL-design" },
+        role: { ru: "Художник по окружению | lvl-дизайн", en: "Environment Artist | LvL-design" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
     ],
     description: {
-      ru: "РџСЂСЏС‚РєРё РІ РїСЂРѕРјС‹С€Р»РµРЅРЅРѕРј РіРѕСЂРѕРґРµ",
+      ru: "Прятки в промышленном городе",
       en: "Hide and Seek in an Industry Town",
     },
     tags: ["Source2", "Counter-Strike 2", "Maniac"],
@@ -562,20 +562,20 @@ export const projects: Project[] = [
   {
     id: "Aquapark_s2",
     title: {
-      ru: "Hide and seek | РђРєРІР°РїР°СЂРє [Source 2]",
+      ru: "Hide and seek | Аквапарк [Source 2]",
       en: "Hide and seek | Aquapark [Source 2]",
     },
     date: "2025-07-12",
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ", en: "Environment Artist | LvL-design" },
+        role: { ru: "Художник по окружению | lvl-дизайн", en: "Environment Artist | LvL-design" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
     ],
     description: {
-      ru: "Р РµРјРµР№Рє СЃС‚Р°СЂРѕР№ РєР°СЂС‚С‹ РёР· CSGO",
+      ru: "Ремейк старой карты из CSGO",
       en: "Remake Of old map from CSGO",
     },
     tags: ["Source2", "Counter-Strike 2", "Maniac",],
@@ -600,13 +600,13 @@ export const projects: Project[] = [
     creators: [
       {
         name: "kEam",
-        role: { ru: "РҐСѓРґРѕР¶РЅРёРє РїРѕ РѕРєСЂСѓР¶РµРЅРёСЋ | lvl-РґРёР·Р°Р№РЅ", en: "Environment Artist | LvL-design" },
+        role: { ru: "Художник по окружению | lvl-дизайн", en: "Environment Artist | LvL-design" },
         url: "https://steamcommunity.com/id/keam16/",
         avatar: "./images/authors/keam_ava.png",
       },
     ],
     description: {
-      ru: "РџСЂСЏС‚РєРё РІ СѓСЋС‚РЅРѕРј РђРјРµСЂРёРєР°РЅСЃРєРѕРј РґРѕРјРµ.",
+      ru: "Прятки в уютном Американском доме.",
       en: "Hide and seek in a cozy American home.",
     },
     tags: ["Source1", "Counter-Strike:Global Offensive", "Maniac"],
@@ -625,4 +625,5 @@ export function getAllTags(): string[] {
   projects.forEach((p) => p.tags.forEach((t) => tagsSet.add(t)));
   return Array.from(tagsSet).sort();
 }
+
 
